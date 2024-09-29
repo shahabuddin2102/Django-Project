@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+    <link rel="stylesheet" href="/static/css/signin.css/">
+</head>
+<body>
+    <h2 style="text-align: center;">SiIGN IN HERE</h2>
+
+    <div class="form-div">
+        <form action="/addmission/" method="POST" novalidate>
+            {% csrf_token %}
+            <div class="container-input">
+
+            <div class="label-div">
+                <label>UserName:</label>
+                <input class="input-button" type="text" name="fullname">
+            </div>
+
+            <div class="label-div">
+                <label>Email Id:</label>
+                <input class="input-button" type="email" name="email">
+            </div>
+            <!-- <p style="text-align: center; font-weight: bold;">Or</p> -->
+            <div class="label-div">
+                <label>Password:</label>
+                <input class="input-button" type="password" name="password">
+            </div>
+
+            <div class="button-div">
+                <a href="/course/"><button class="button" id="button1" type="submit">Sign In</button></a>
+                <button class="button" id="button2" type="reset">Clear</button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <p style="text-align: center; font-size: 1.25rem;">Already I have an Account! <strong style="color: blue;">Login</strong> Please Or <strong style="color: blue;">SignUp</strong></p>
+</body>
+</html>

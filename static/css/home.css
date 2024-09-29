@@ -1,0 +1,135 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-section{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header-section h1{
+    margin: 8px 0px;
+}
+.logo-div{
+    margin-top: 5px;
+}
+
+.image{
+    width: 250px;
+}
+
+h2{
+    text-align: center;
+}
+
+h2:hover{
+    color: #170c07;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 2.5px 0px;
+}
+
+.main-section{
+    justify-content: center;
+    flex-direction: column;
+}
+.section-box{
+    width: 90%;
+    padding: 5px;
+    margin: 10px 5%;
+
+}
+.content-child{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-inline: 5%;
+
+}
+
+.content-child p{
+    font-size: 1rem;
+    margin: 8px 0px;
+}
+
+.left-parent-div{
+    background-color: #eff6fa;
+    border-radius: 10px;
+    width: 50%;
+    height: 380px;
+    padding: 25px;
+    text-transform: capitalize;
+}
+.left-div{
+    text-align: justify;
+}
+
+
+.left-div h3{
+    margin-top: 5px;
+}
+
+.left-div a button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px 3px;
+    font-weight: 700;
+    border: 2px solid blue;
+    border-radius: 3px;
+    color: var(--accent-color-dark);
+    background-color: lightblue
+}
+
+.right-parent-div{
+    width: 45%;
+    height: 380px;
+    background-color: #eff6fa;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.right-div{
+    padding: 5px;
+    text-align: justify;
+}
+
+.right-div h3{
+    margin-top: 15px;
+}
+
+.right-div a img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1180px){
+    .content-child{
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        overflow-x: hidden;
+    }
+    .left-parent-div{
+        width: 480px;
+        height: 450px;
+        overflow-wrap: break-word;
+    }
+    .right-parent-div{
+        width: 480px;
+        height: 450px;
+    }
+}

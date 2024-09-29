@@ -1,0 +1,30 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-section{
+    background-color: #ddddee;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.footer-content{
+    margin: 20px 10%;
+    background-color: #ddddee;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    width: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address-bar{
+    flex-direction: column;
+    margin-bottom: 10px;
+}

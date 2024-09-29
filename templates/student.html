@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student data page</title>
+    <style>
+        .table-div{
+            background-color: #eff6fa;
+            border: 3px solid red;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">ALL STUDENT DATA LIST YOU CAN SEE VERY EASILY:</h2>
+    <hr size="8" color="red" style="border-radius: 8px;">
+
+    <div class="table-div">
+        <table border="2px" cellpadding="5px">
+            <tr>
+                <th>Student Id:</th>
+                <th>Full Name:</th>
+                <th>Email ID:</th>
+                <th>Phone NO:</th>
+                <th>Course Name:</th>
+                <th>Password:</th>
+                <th>Action:</th>
+            </tr>
+
+            {% for data in details %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{data.fullname}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.phone}}</td>
+                <td>{{data.coursename}}</td>
+                <td>{{data.password}}</td>
+                <td>
+                    <button style="background-color: red; cursor: pointer;">Delete</button>
+                    <button style="background-color: cornflowerblue; cursor: pointer;">Update</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
